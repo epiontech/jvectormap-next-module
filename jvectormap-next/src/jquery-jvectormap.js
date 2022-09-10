@@ -8,6 +8,7 @@
 (function (factory) {
   if (typeof exports === 'object') {
     // Node/CommonJS style for Browserify
+    factory(jQuery);
     module.exports = factory;
   } else if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
