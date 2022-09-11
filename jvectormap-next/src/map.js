@@ -601,8 +601,8 @@ jvm.Map.prototype = {
         transX = anchorX + this.defaultWidth * (this.width / (this.defaultWidth * scale)) / 2;
         transY = anchorY + this.defaultHeight * (this.height / (this.defaultHeight * scale)) / 2;
       } else {
-        transX = this.transX - (zoomStep - 1) / scale * anchorX;
-        transY = this.transY - (zoomStep - 1) / scale * anchorY;
+        transX = this.transX - (this.params.zoomStep - 1) / scale * anchorX;
+        transY = this.transY - (this.params.zoomStep - 1) / scale * anchorY;
       }
     }
 
